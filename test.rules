@@ -1,0 +1,41 @@
+alert tcp any any -> any 80 (msg:"naver.com access"; content:"GET /"; content:"Host: "; content:"naver.com"; sid:10001; rev:1;)
+
+alert tcp any any -> any 80 (msg:"papago.naver.com access"; content:"GET /"; content:"Host: "; content:"papago.naver.com"; sid:10002; rev:1;)
+
+alert tcp any any -> any 80 (msg:"github.com access"; content:"GET /"; content:"Host: "; content:"github.com"; sid:10003; rev:1;)
+
+alert tcp any any -> any 80 (msg:"gitlab.com access"; content:"GET /"; content:"Host: "; content:"gitlab.com"; sid:10004; rev:1;)
+
+alert tcp any any -> any 80 (msg:"daum.net access"; content:"GET /"; content:"Host: "; content:"daum.net"; sid:10005; rev:1;)
+
+alert tcp any any -> any 80 (msg:"wavve.com access"; content:"GET /"; content:"Host: "; content:"wavve.com"; sid:10006; rev:1;)
+
+alert tcp any any -> any 80 (msg:"disneyplus.com access"; content:"GET /"; content:"Host: "; content:"disneyplus.com"; sid:10007; rev:1;)
+
+alert tcp any any -> any 80 (msg:"kulms.korea.ac.kr access"; content:"GET /"; content:"Host: "; content:"kulms.korea.ac.kr"; sid:10008; rev:1;)
+
+alert tcp any any -> any 80 (msg:"qt.io access"; content:"GET /"; content:"Host: "; content:"qt.io"; fast_pattern; sid:10009; rev:1;)
+
+alert tcp any any -> any 80 (msg:"auction.co.kr access"; content:"GET /"; content:"Host: "; content:"auction.co.kr"; sid:10010; rev:1;)
+
+alert tcp any any -> any 443 (msg:"naver.com(443) access"; content:"http/1.1"; content:"naver.com"; sid:20001; rev:1;)
+
+alert tcp any any -> any 443 (msg:"papago.naver.com(443) access"; content:"http/1.1"; content:"papago.naver.com"; sid:20002; rev:1;)
+
+alert tcp any any -> any 443 (msg:"github.com(443) access"; content:"http/1.1"; content:"github.com"; sid:20003; rev:1;)
+
+alert tcp any any -> any 443 (msg:"gitlab.com(443) access"; content:"http/1.1"; content:"gitlab.com"; sid:20004; rev:1;)
+
+alert tcp any any -> any 443 (msg:"portal.korea.ac.kr(443) access"; content:"http/1.1"; content:"portal.korea.ac.kr"; sid:20005; rev:1;)
+
+alert tcp any any -> any 443 (msg:"sugang.korea.ac.kr(443) access"; content:"http/1.1"; content:"sugang.korea.ac.kr"; sid:20006; rev:1;)
+
+alert tcp any any -> any 443 (msg:"disneyplus.com(443) access"; content:"http/1.1"; content:"disneyplus.com"; sid:20007; rev:1;)
+
+alert tcp any any -> any 443 (msg:"kulms.korea.ac.kr(443) access"; content:"http/1.1"; content:"kulms.korea.ac.kr"; sid:20008; rev:1;)
+
+alert tcp any any -> any 443 (msg:"gss.korea.ac.kr(443) access"; content:"http/1.1"; content:"gss.korea.ac.kr"; fast_pattern; sid:20009; rev:1;)
+
+alert tcp any any -> any 443 (msg:"qt.io(443) access"; content:"http/1.1"; content:"qt.io"; fast_pattern; sid:20010; rev:1;)
+
+
